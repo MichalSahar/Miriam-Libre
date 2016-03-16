@@ -43,7 +43,7 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature ccmp;\012feature locl;\012feature sups;\012feature frac;\012feature ordn;\012feature c2sc;\012feature smcp;\012feature salt;\012feature ss01;\012";
+code = "feature ccmp;\012feature locl;\012feature sups;\012feature frac;\012feature ordn;\012feature pnum;\012feature tnum;\012feature c2sc;\012feature smcp;\012feature salt;\012feature ss01;\012";
 name = aalt;
 },
 {
@@ -70,6 +70,16 @@ name = frac;
 automatic = 1;
 code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;\012sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;\012";
 name = ordn;
+},
+{
+automatic = 1;
+code = "sub zero.tf by zero;\012sub one.tf by one;\012sub two.tf by two;\012sub three.tf by three;\012sub four.tf by four;\012sub five.tf by five;\012sub six.tf by six;\012sub seven.tf by seven;\012sub eight.tf by eight;\012sub nine.tf by nine;\012";
+name = pnum;
+},
+{
+automatic = 1;
+code = "sub zero by zero.tf;\012sub one by one.tf;\012sub two by two.tf;\012sub three by three.tf;\012sub four by four.tf;\012sub five by five.tf;\012sub six by six.tf;\012sub seven by seven.tf;\012sub eight by eight.tf;\012sub nine by nine.tf;\012";
+name = tnum;
 },
 {
 automatic = 1;
@@ -19097,6 +19107,186 @@ width = 600;
 }
 );
 unicode = 0039;
+},
+{
+glyphname = zero.tf;
+lastChange = "2016-03-16 16:13:16 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = zero;
+transform = "{1, 0, 0, 1, 3, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = one.tf;
+lastChange = "2016-03-16 16:13:18 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = one;
+transform = "{1, 0, 0, 1, 76, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = two.tf;
+lastChange = "2016-03-16 16:13:19 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = two;
+transform = "{1, 0, 0, 1, 53, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = three.tf;
+lastChange = "2016-03-16 16:13:21 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = three;
+transform = "{1, 0, 0, 1, 50, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = four.tf;
+lastChange = "2016-03-16 16:13:23 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = four;
+transform = "{1, 0, 0, 1, 17, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = five.tf;
+lastChange = "2016-03-16 16:13:24 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = five;
+transform = "{1, 0, 0, 1, 38, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = six.tf;
+lastChange = "2016-03-16 16:13:26 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = six;
+transform = "{1, 0, 0, 1, 7, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = seven.tf;
+lastChange = "2016-03-16 16:13:28 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = seven;
+transform = "{1, 0, 0, 1, 75, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = eight.tf;
+lastChange = "2016-03-16 16:13:30 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = eight;
+transform = "{1, 0, 0, 1, 1, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
+},
+{
+glyphname = nine.tf;
+lastChange = "2016-03-16 16:13:33 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = nine;
+transform = "{1, 0, 0, 1, 20, 0}";
+}
+);
+layerId = "1D8279CA-6213-4437-A9CB-DE6E86D89D97";
+name = Bold;
+width = 625;
+}
+);
 },
 {
 glyphname = fraction;
