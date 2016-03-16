@@ -43,12 +43,12 @@ name = Languagesystems;
 features = (
 {
 automatic = 1;
-code = "feature ccmp;\012feature locl;\012feature sups;\012feature frac;\012feature ordn;\012feature c2sc;\012feature smcp;\012feature salt;\012feature ss01;\012";
+code = "feature ccmp;\012feature locl;\012feature sups;\012feature frac;\012feature ordn;\012feature pnum;\012feature tnum;\012feature c2sc;\012feature smcp;\012feature salt;\012feature ss01;\012";
 name = aalt;
 },
 {
 automatic = 1;
-code = "lookup latn_decomb {\012\011script latn;\012@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];\012@CombiningNonTopAccents = [cedillacomb ogonekcomb slashlongcomb slashshortcomb strokelongcomb strokeshortcomb];\012\011sub [i]' @CombiningTopAccents by [idotless];\012\011sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];\012} latn_decomb;\012";
+code = "lookup latn_comb1 {\012\011script latn;\012@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];\012@CombiningNonTopAccents = [cedillacomb ogonekcomb slashlongcomb slashshortcomb strokelongcomb strokeshortcomb];\012\011sub [i]' @CombiningTopAccents by [idotless];\012\011sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];\012} latn_comb1;\012";
 name = ccmp;
 },
 {
@@ -73,6 +73,16 @@ name = ordn;
 },
 {
 automatic = 1;
+code = "sub zero.tf by zero;\012sub one.tf by one;\012sub two.tf by two;\012sub three.tf by three;\012sub four.tf by four;\012sub five.tf by five;\012sub six.tf by six;\012sub seven.tf by seven;\012sub eight.tf by eight;\012sub nine.tf by nine;\012";
+name = pnum;
+},
+{
+automatic = 1;
+code = "sub zero by zero.tf;\012sub one by one.tf;\012sub two by two.tf;\012sub three by three.tf;\012sub four by four.tf;\012sub five by five.tf;\012sub six by six.tf;\012sub seven by seven.tf;\012sub eight by eight.tf;\012sub nine by nine.tf;\012";
+name = tnum;
+},
+{
+automatic = 1;
 code = "sub zero by zero.sc;\012sub one by one.sc;\012sub two by two.sc;\012sub three by three.sc;\012sub four by four.sc;\012sub five by five.sc;\012sub six by six.sc;\012sub seven by seven.sc;\012sub eight by eight.sc;\012sub nine by nine.sc;\012";
 name = c2sc;
 },
@@ -88,12 +98,12 @@ name = liga;
 },
 {
 automatic = 1;
-code = "sub e by e.ss01;\012";
+code = "sub ae by ae.ss01;\012sub e by e.ss01;\012sub eogonek by eogonek.ss01;\012sub f by f.ss01;\012sub oe by oe.ss01;\012sub fi by fi.ss01;\012sub fl by fl.ss01;\012";
 name = salt;
 },
 {
 automatic = 1;
-code = "sub e by e.ss01;\012sub f by f.ss01;\012sub fi by fi.ss01;\012sub fl by fl.ss01;\012";
+code = "sub ae by ae.ss01;\012sub e by e.ss01;\012sub eogonek by eogonek.ss01;\012sub f by f.ss01;\012sub oe by oe.ss01;\012sub fi by fi.ss01;\012sub fl by fl.ss01;\012";
 name = ss01;
 }
 );
@@ -19001,6 +19011,223 @@ width = 574;
 }
 );
 unicode = 0039;
+},
+{
+glyphname = zero.tf;
+lastChange = "2016-03-16 16:01:41 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = zero;
+transform = "{1, 0, 0, 1, 15, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = one.tf;
+lastChange = "2016-03-16 16:01:47 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = one;
+transform = "{1, 0, 0, 1, 90, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = two.tf;
+lastChange = "2016-03-16 16:01:35 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = two;
+transform = "{1, 0, 0, 1, 59, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = three.tf;
+lastChange = "2016-03-16 16:05:30 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = three;
+transform = "{1, 0, 0, 1, 66, 0}";
+}
+);
+hints = (
+{
+horizontal = 1;
+place = "{-12.000000, 74.000000}";
+},
+{
+horizontal = 1;
+place = "{695.000000, -76.000000}";
+},
+{
+place = "{395.000000, 79.000000}";
+},
+{
+horizontal = 1;
+place = "{158.000000, -20.000000}";
+target = down;
+type = TopGhost;
+},
+{
+horizontal = 1;
+place = "{371.000000, 69.000000}";
+},
+{
+horizontal = 1;
+place = "{336.000000, 21.000000}";
+target = up;
+type = BottomGhost;
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = four.tf;
+lastChange = "2016-03-16 16:05:52 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = four;
+transform = "{1, 0, 0, 1, 37, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = five.tf;
+lastChange = "2016-03-16 16:06:39 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = five;
+transform = "{1, 0, 0, 1, 53, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = six.tf;
+lastChange = "2016-03-16 16:07:02 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = six;
+transform = "{1, 0, 0, 1, 18, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = seven.tf;
+lastChange = "2016-03-16 16:07:29 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = seven;
+transform = "{1, 0, 0, 1, 91, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = eight.tf;
+lastChange = "2016-03-16 16:07:44 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = eight;
+transform = "{1, 0, 0, 1, 18, 0}";
+}
+);
+guideLines = (
+{
+position = "{-49, 0}";
+},
+{
+position = "{375, 592}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
+},
+{
+glyphname = nine.tf;
+lastChange = "2016-03-16 16:08:04 +0000";
+layers = (
+{
+components = (
+{
+disableAlignment = 1;
+name = nine;
+transform = "{1, 0, 0, 1, 33, 0}";
+}
+);
+layerId = "DDABD3A5-4A8B-4D55-9B9E-1269DFBEF3A1";
+name = Regular;
+width = 625;
+}
+);
 },
 {
 glyphname = fraction;
